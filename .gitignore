@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Ignore large video files to prevent GitHub export errors
+*.mp4
+*.mov
+
+# Ignore large image files temporarily to allow GitHub export
+*.jpg
+*.png
