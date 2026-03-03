@@ -18,3 +18,4 @@ View your app in AI Studio: https://ai.studio/apps/d0c78fa3-add3-402b-a546-21ae4
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+![image alti](https://github.com/arminsalle/Sami/blob/8b3825eb95f53f21da02051cf54fddf0acf44421/hisa.webp)
