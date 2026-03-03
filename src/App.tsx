@@ -193,13 +193,13 @@ const About = () => {
             className="relative"
           >
             <img 
-              src="/hisa.jpg" 
+              src="/hisa.webp" 
               alt="Modern House Exterior" 
               className="w-full h-[650px] object-cover rounded-sm opacity-90"
             />
             <div className="absolute -bottom-16 -right-12 w-2/3 hidden md:block border-[8px] border-bg">
               <img 
-                src="/kopalnica.jpg" 
+                src="/kopalnica.webp" 
                 alt="Modern Bathroom" 
                 className="w-full h-[350px] object-cover rounded-sm opacity-90"
               />
@@ -251,13 +251,13 @@ const Services = () => {
     {
       title: t('systems.s1_title'),
       desc: t('systems.s1_desc'),
-      image: "/about1.jpg",
+      image: "/about1.webp",
       fallback: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80"
     },
     {
       title: t('systems.s2_title'),
       desc: t('systems.s2_desc'),
-      image: "/about2.jpg",
+      image: "/about2.webp",
       fallback: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80"
     },
     {
@@ -268,7 +268,7 @@ const Services = () => {
     {
       title: t('systems.s4_title'),
       desc: t('systems.s4_desc'),
-      image: "/about3.jpg",
+      image: "/about3.webp",
       fallback: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80"
     }
   ];
@@ -372,23 +372,11 @@ const Transformation = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="order-1 lg:order-2 relative h-[700px] w-full"
+            className="order-1 lg:order-2 flex items-center justify-center w-full py-12 lg:py-0"
           >
-            {/* 
-              Local video file. Upload your video to /public/assets/videos/sami-guarantee.mp4
-            */}
-            <video 
-              src="/assets/videos/sami-guarantee.mp4" 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="w-full h-full object-cover rounded-t-full opacity-80"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-bg via-transparent to-transparent" />
-            <div className="absolute bottom-12 left-1/2 -translate-x-1/2 bg-bg/80 backdrop-blur-md border border-white/10 p-6 rounded-sm w-3/4 text-center">
-              <div className="text-accent font-serif text-3xl mb-1">{t('transformation.guarantee_years')}</div>
-              <div className="micro-label">{t('transformation.guarantee_label')}</div>
+            <div className="bg-bg/80 backdrop-blur-md border border-white/10 p-10 rounded-sm w-full max-w-md text-center shadow-2xl">
+              <div className="text-accent font-serif text-5xl mb-3">{t('transformation.guarantee_years')}</div>
+              <div className="micro-label text-lg tracking-widest">{t('transformation.guarantee_label')}</div>
             </div>
           </motion.div>
         </div>
@@ -549,22 +537,22 @@ const CaseStudy = () => {
         </motion.div>
 
         <BeforeAfterSlider 
-          beforeImage="/before.jpg"
-          afterImage="/after.jpg"
+          beforeImage="/before.webp"
+          afterImage="/after.webp"
           title={t('case_study.s1_title')}
           description={t('case_study.s1_desc')}
         />
 
         <BeforeAfterSlider 
-          beforeImage="/before2.jpg"
-          afterImage="/after2.jpg"
+          beforeImage="/before2.webp"
+          afterImage="/after2.webp"
           title={t('case_study.s2_title')}
           description={t('case_study.s2_desc')}
         />
 
         <BeforeAfterSlider 
-          beforeImage="/before3.jpg"
-          afterImage="/after3.jpg"
+          beforeImage="/before3.webp"
+          afterImage="/after3.webp"
           title={t('case_study.s3_title')}
           description={t('case_study.s3_desc')}
         />

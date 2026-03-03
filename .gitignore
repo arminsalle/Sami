@@ -10,7 +10,3 @@ coverage/
 # Ignore large video files to prevent GitHub export errors
 *.mp4
 *.mov
-
-# Ignore large image files temporarily to allow GitHub export
-*.jpg
-*.png
