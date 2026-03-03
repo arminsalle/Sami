@@ -193,13 +193,13 @@ const About = () => {
             className="relative"
           >
             <img 
-              src="/hisa.webp" 
+              src="https://i.imgur.com/6BTn5jw.webp" 
               alt="Modern House Exterior" 
               className="w-full h-[650px] object-cover rounded-sm opacity-90"
             />
             <div className="absolute -bottom-16 -right-12 w-2/3 hidden md:block border-[8px] border-bg">
               <img 
-                src="/kopalnica.webp" 
+                src="https://i.imgur.com/N8IzX2O.webp" 
                 alt="Modern Bathroom" 
                 className="w-full h-[350px] object-cover rounded-sm opacity-90"
               />
@@ -251,13 +251,13 @@ const Services = () => {
     {
       title: t('systems.s1_title'),
       desc: t('systems.s1_desc'),
-      image: "/about1.webp",
+      image: "https://i.imgur.com/Ui8zP0k.webp",
       fallback: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80"
     },
     {
       title: t('systems.s2_title'),
       desc: t('systems.s2_desc'),
-      image: "/about2.webp",
+      image: "https://i.imgur.com/MypaiXp.webp",
       fallback: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80"
     },
     {
@@ -268,7 +268,7 @@ const Services = () => {
     {
       title: t('systems.s4_title'),
       desc: t('systems.s4_desc'),
-      image: "/about3.webp",
+      image: "https://i.imgur.com/qP01mft.webp",
       fallback: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80"
     }
   ];
@@ -537,22 +537,22 @@ const CaseStudy = () => {
         </motion.div>
 
         <BeforeAfterSlider 
-          beforeImage="/before.webp"
-          afterImage="/after.webp"
+          beforeImage="https://i.imgur.com/2LDVaoE.webp"
+          afterImage="https://i.imgur.com/VUG5T2J.webp"
           title={t('case_study.s1_title')}
           description={t('case_study.s1_desc')}
         />
 
         <BeforeAfterSlider 
-          beforeImage="/before2.webp"
-          afterImage="/after2.webp"
+          beforeImage="https://i.imgur.com/AxAQ8Et.webp"
+          afterImage="https://i.imgur.com/QklU05t.webp"
           title={t('case_study.s2_title')}
           description={t('case_study.s2_desc')}
         />
 
         <BeforeAfterSlider 
-          beforeImage="/before3.webp"
-          afterImage="/after3.webp"
+          beforeImage="https://i.imgur.com/dc4UtRW.webp"
+          afterImage="https://i.imgur.com/3UBPjuS.webp"
           title={t('case_study.s3_title')}
           description={t('case_study.s3_desc')}
         />
