@@ -29,16 +29,20 @@ const Navbar = () => {
   }, []);
 
   const languages = [
-    { name: 'English', code: 'en' },
-    { name: 'German', code: 'de' },
-    { name: 'Croatian', code: 'hr' },
-    { name: 'Slovenian', code: 'sl' }
+    { name: t('nav.lang_en'), code: 'en' },
+    { name: t('nav.lang_de'), code: 'de' },
+    { name: t('nav.lang_hr'), code: 'hr' },
+    { name: t('nav.lang_sl'), code: 'sl' }
   ];
 
   const handleLangSelect = (langCode: string) => {
     setCurrentLang(langCode);
+    i18n.changeLanguage(langCode);
     setIsLangOpen(false);
-    window.open(`${window.location.pathname}?lang=${langCode}`, '_blank');
+    
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', langCode);
+    window.history.pushState({}, '', url);
   };
 
   return (
