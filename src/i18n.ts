@@ -138,7 +138,7 @@ const resources = {
         "direct": "Direct Line",
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Privacy Policy",
-        "terms": "Terms of Service"
+        "impressum": "Imprint"
       }
     }
   },
@@ -277,8 +277,8 @@ const resources = {
         "nav": "Navigation",
         "direct": "Direkter Kontakt",
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
-        "privacy": "Datenschutzrichtlinie",
-        "terms": "Nutzungsbedingungen"
+        "privacy": "Datenschutzerklärung",
+        "impressum": "Impressum"
       }
     }
   },
@@ -418,7 +418,7 @@ const resources = {
         "direct": "Izravna linija",
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Politika privatnosti",
-        "terms": "Uvjeti pružanja usluge"
+        "impressum": "Impresum"
       }
     }
   },
@@ -558,7 +558,7 @@ const resources = {
         "direct": "Neposredna linija",
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Politika zasebnosti",
-        "terms": "Pogoji storitve"
+        "impressum": "Impresum"
       }
     }
   }

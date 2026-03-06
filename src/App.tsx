@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, MapPin, Shield, Clock, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Impressum, PrivacyPolicy } from './LegalPages';
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }: { onNavigate: (view: 'home' | 'impressum' | 'privacy') => void }) => {
   const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -56,9 +57,9 @@ const Navbar = () => {
           <span className="font-serif text-2xl tracking-widest uppercase">SAMI</span>
         </div>
         <div className="hidden md:flex items-center gap-10 micro-label">
-          <a href="#" className="hover:text-accent transition-colors">{t('nav.home')}</a>
-          <a href="#expertise" className="hover:text-accent transition-colors">{t('nav.expertise')}</a>
-          <a href="#systems" className="hover:text-accent transition-colors">{t('nav.systems')}</a>
+          <button onClick={() => onNavigate('home')} className="hover:text-accent transition-colors">{t('nav.home')}</button>
+          <a href="#expertise" onClick={() => onNavigate('home')} className="hover:text-accent transition-colors">{t('nav.expertise')}</a>
+          <a href="#systems" onClick={() => onNavigate('home')} className="hover:text-accent transition-colors">{t('nav.systems')}</a>
         </div>
         <div className="relative" ref={langRef}>
           <button 
@@ -647,7 +648,7 @@ const FAQ = () => {
   );
 };
 
-const Footer = () => {
+const Footer = ({ onNavigate }: { onNavigate: (view: 'home' | 'impressum' | 'privacy') => void }) => {
   const { t } = useTranslation();
   return (
     <footer className="bg-bg py-16 border-t border-white/5 overflow-hidden">
@@ -661,9 +662,9 @@ const Footer = () => {
         <div className="flex flex-col gap-5 text-center md:text-left">
           <span className="micro-label">{t('footer.nav')}</span>
           <div className="flex gap-6">
-            <a href="#" className="text-sm font-light text-white/50 hover:text-accent transition-colors">{t('nav.home')}</a>
-            <a href="#expertise" className="text-sm font-light text-white/50 hover:text-accent transition-colors">{t('nav.expertise')}</a>
-            <a href="#systems" className="text-sm font-light text-white/50 hover:text-accent transition-colors">{t('nav.systems')}</a>
+            <button onClick={() => onNavigate('home')} className="text-sm font-light text-white/50 hover:text-accent transition-colors">{t('nav.home')}</button>
+            <a href="#expertise" onClick={() => onNavigate('home')} className="text-sm font-light text-white/50 hover:text-accent transition-colors">{t('nav.expertise')}</a>
+            <a href="#systems" onClick={() => onNavigate('home')} className="text-sm font-light text-white/50 hover:text-accent transition-colors">{t('nav.systems')}</a>
           </div>
         </div>
         
@@ -696,8 +697,8 @@ const Footer = () => {
           {t('footer.rights')}
         </p>
         <div className="flex gap-4 text-xs font-light text-white/30">
-          <a href="#" className="hover:text-white/60 transition-colors">{t('footer.privacy')}</a>
-          <a href="#" className="hover:text-white/60 transition-colors">{t('footer.terms')}</a>
+          <button onClick={() => { onNavigate('privacy'); window.scrollTo(0, 0); }} className="hover:text-white/60 transition-colors">{t('footer.privacy')}</button>
+          <button onClick={() => { onNavigate('impressum'); window.scrollTo(0, 0); }} className="hover:text-white/60 transition-colors">{t('footer.impressum')}</button>
         </div>
       </motion.div>
     </footer>
@@ -705,20 +706,37 @@ const Footer = () => {
 };
 
 export default function App() {
+  const [currentView, setCurrentView] = useState<'home' | 'impressum' | 'privacy'>('home');
+
   return (
     <div className="min-h-screen bg-bg text-white selection:bg-accent selection:text-bg font-sans bg-grain">
-      <Navbar />
-      <main>
-        <Hero />
-        <Stats />
-        <About />
-        <Services />
-        <Transformation />
-        <CaseStudy />
-        <Continuum />
-        <FAQ />
-      </main>
-      <Footer />
+      <Navbar onNavigate={setCurrentView} />
+      <AnimatePresence mode="wait">
+        {currentView === 'home' && (
+          <motion.main
+            key="home"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Hero />
+            <Stats />
+            <About />
+            <Services />
+            <Transformation />
+            <CaseStudy />
+            <Continuum />
+            <FAQ />
+          </motion.main>
+        )}
+        {currentView === 'impressum' && (
+          <Impressum key="impressum" onBack={() => setCurrentView('home')} />
+        )}
+        {currentView === 'privacy' && (
+          <PrivacyPolicy key="privacy" onBack={() => setCurrentView('home')} />
+        )}
+      </AnimatePresence>
+      <Footer onNavigate={setCurrentView} />
     </div>
   );
 }
