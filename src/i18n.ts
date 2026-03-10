@@ -28,8 +28,7 @@ const resources = {
         "vertical": "SOVEREIGN ENGINEERING"
       },
       "stats": {
-        "years": "Years Experience",
-        "estates": "Estates Protected",
+        "german_tech": "German Technology",
         "discretion": "Discretion"
       },
       "about": {
@@ -139,6 +138,31 @@ const resources = {
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Privacy Policy",
         "impressum": "Imprint"
+      },
+      "legal": {
+        "back": "BACK",
+        "impressum": {
+          "sec1_title": "Information according to § 5 TMG",
+          "sec2_title": "Contact",
+          "phone": "Phone",
+          "email": "Email",
+          "sec3_title": "VAT ID",
+          "sec3_desc": "VAT Identification Number according to § 27 a of the Value Added Tax Act",
+          "sec4_title": "Consumer Dispute Resolution/Universal Arbitration Board",
+          "sec4_desc": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+        },
+        "privacy": {
+          "sec1_title": "1. Data Protection at a Glance",
+          "sec1_subtitle": "General Information",
+          "sec1_desc": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data with which you could be personally identified.",
+          "sec2_title": "2. Hosting",
+          "sec2_desc": "We host the content of our website with the following provider: Hostinger.",
+          "sec3_title": "3. General Notes and Mandatory Information",
+          "sec3_subtitle1": "Data Protection",
+          "sec3_desc1": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this privacy policy.",
+          "sec3_subtitle2": "Responsible Entity",
+          "sec3_desc2": "The responsible entity for data processing on this website is:"
+        }
       }
     }
   },
@@ -168,8 +192,7 @@ const resources = {
         "vertical": "SOVEREIGN ENGINEERING"
       },
       "stats": {
-        "years": "Jahre Erfahrung",
-        "estates": "Geschützte Immobilien",
+        "german_tech": "Deutsche Technologie",
         "discretion": "Diskretion"
       },
       "about": {
@@ -279,6 +302,31 @@ const resources = {
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Datenschutzerklärung",
         "impressum": "Impressum"
+      },
+      "legal": {
+        "back": "ZURÜCK",
+        "impressum": {
+          "sec1_title": "Angaben gemäß § 5 TMG",
+          "sec2_title": "Kontakt",
+          "phone": "Telefon",
+          "email": "E-Mail",
+          "sec3_title": "Umsatzsteuer-ID",
+          "sec3_desc": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz",
+          "sec4_title": "Verbraucherstreitbeilegung/Universalschlichtungsstelle",
+          "sec4_desc": "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+        },
+        "privacy": {
+          "sec1_title": "1. Datenschutz auf einen Blick",
+          "sec1_subtitle": "Allgemeine Hinweise",
+          "sec1_desc": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+          "sec2_title": "2. Hosting",
+          "sec2_desc": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter: Hostinger.",
+          "sec3_title": "3. Allgemeine Hinweise und Pflichtinformationen",
+          "sec3_subtitle1": "Datenschutz",
+          "sec3_desc1": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+          "sec3_subtitle2": "Verantwortliche Stelle",
+          "sec3_desc2": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:"
+        }
       }
     }
   },
@@ -308,8 +356,7 @@ const resources = {
         "vertical": "SOVEREIGN ENGINEERING"
       },
       "stats": {
-        "years": "Godina iskustva",
-        "estates": "Zaštićenih nekretnina",
+        "german_tech": "Njemačka tehnologija",
         "discretion": "Diskrecija"
       },
       "about": {
@@ -419,6 +466,31 @@ const resources = {
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Politika privatnosti",
         "impressum": "Impresum"
+      },
+      "legal": {
+        "back": "NATRAG",
+        "impressum": {
+          "sec1_title": "Informacije prema § 5 TMG",
+          "sec2_title": "Kontakt",
+          "phone": "Telefon",
+          "email": "E-mail",
+          "sec3_title": "PDV ID",
+          "sec3_desc": "Identifikacijski broj za PDV prema § 27 a Zakona o porezu na dodanu vrijednost",
+          "sec4_title": "Rješavanje potrošačkih sporova/Univerzalno arbitražno tijelo",
+          "sec4_desc": "Nismo spremni niti obvezni sudjelovati u postupcima rješavanja sporova pred potrošačkim arbitražnim tijelom."
+        },
+        "privacy": {
+          "sec1_title": "1. Zaštita podataka na prvi pogled",
+          "sec1_subtitle": "Opće informacije",
+          "sec1_desc": "Sljedeće informacije pružaju jednostavan pregled onoga što se događa s vašim osobnim podacima kada posjetite ovu web stranicu. Osobni podaci su svi podaci pomoću kojih vas se može osobno identificirati.",
+          "sec2_title": "2. Hosting",
+          "sec2_desc": "Sadržaj naše web stranice hostamo kod sljedećeg pružatelja usluga: Hostinger.",
+          "sec3_title": "3. Opće napomene i obvezne informacije",
+          "sec3_subtitle1": "Zaštita podataka",
+          "sec3_desc1": "Operateri ovih stranica vrlo ozbiljno shvaćaju zaštitu vaših osobnih podataka. S vašim osobnim podacima postupamo povjerljivo i u skladu sa zakonskim propisima o zaštiti podataka te ovom politikom privatnosti.",
+          "sec3_subtitle2": "Odgovorno tijelo",
+          "sec3_desc2": "Odgovorno tijelo za obradu podataka na ovoj web stranici je:"
+        }
       }
     }
   },
@@ -448,8 +520,7 @@ const resources = {
         "vertical": "SOVEREIGN ENGINEERING"
       },
       "stats": {
-        "years": "Let izkušenj",
-        "estates": "Zaščitenih nepremičnin",
+        "german_tech": "Nemška tehnologija",
         "discretion": "Diskretnost"
       },
       "about": {
@@ -559,6 +630,31 @@ const resources = {
         "rights": "© 2026 SAMI Sovereign Surface Engineering.",
         "privacy": "Politika zasebnosti",
         "impressum": "Impresum"
+      },
+      "legal": {
+        "back": "NAZAJ",
+        "impressum": {
+          "sec1_title": "Informacije v skladu s § 5 TMG",
+          "sec2_title": "Kontakt",
+          "phone": "Telefon",
+          "email": "E-pošta",
+          "sec3_title": "ID za DDV",
+          "sec3_desc": "Identifikacijska številka za DDV v skladu s § 27 a Zakona o davku na dodano vrednost",
+          "sec4_title": "Reševanje potrošniških sporov/Univerzalni arbitražni odbor",
+          "sec4_desc": "Nismo pripravljeni ali dolžni sodelovati v postopkih reševanja sporov pred potrošniškim arbitražnim odborom."
+        },
+        "privacy": {
+          "sec1_title": "1. Varstvo podatkov na prvi pogled",
+          "sec1_subtitle": "Splošne informacije",
+          "sec1_desc": "Naslednje informacije zagotavljajo preprost pregled nad tem, kaj se zgodi z vašimi osebnimi podatki, ko obiščete to spletno mesto. Osebni podatki so vsi podatki, s katerimi vas je mogoče osebno prepoznati.",
+          "sec2_title": "2. Gostovanje",
+          "sec2_desc": "Vsebino našega spletnega mesta gostujemo pri naslednjem ponudniku: Hostinger.",
+          "sec3_title": "3. Splošne opombe in obvezne informacije",
+          "sec3_subtitle1": "Varstvo podatkov",
+          "sec3_desc1": "Upravljavci teh strani zelo resno jemljejo varstvo vaših osebnih podatkov. Z vašimi osebnimi podatki ravnamo zaupno in v skladu z zakonskimi predpisi o varstvu podatkov ter to politiko zasebnosti.",
+          "sec3_subtitle2": "Odgovorni organ",
+          "sec3_desc2": "Odgovorni organ za obdelavo podatkov na tem spletnem mestu je:"
+        }
       }
     }
   }

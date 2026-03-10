@@ -165,14 +165,10 @@ const Stats = () => {
         transition={{ duration: 0.8 }}
         className="max-w-7xl mx-auto px-6 py-20"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x divide-white/5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:divide-x divide-white/5">
           <div className="text-center px-4">
-            <div className="text-5xl md:text-6xl font-serif text-accent mb-4 font-light tracking-tight">15+</div>
-            <div className="micro-label">{t('stats.years')}</div>
-          </div>
-          <div className="text-center px-4">
-            <div className="text-5xl md:text-6xl font-serif text-accent mb-4 font-light tracking-tight">200+</div>
-            <div className="micro-label">{t('stats.estates')}</div>
+            <div className="text-5xl md:text-6xl font-serif text-accent mb-4 font-light tracking-tight">100%</div>
+            <div className="micro-label">{t('stats.german_tech')}</div>
           </div>
           <div className="text-center px-4">
             <div className="text-5xl md:text-6xl font-serif text-accent mb-4 font-light tracking-tight">100%</div>
